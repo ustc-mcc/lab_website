@@ -124,4 +124,8 @@ STATICFILES_DIRS = (
 )
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = '/data2/lab_media'
+MEDIA_URL = '/media/'
+
+
 
