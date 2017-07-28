@@ -1,1 +1,61 @@
-This is home page!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<meta charset="utf-8"> 
+	<title>Home</title>
+	
+	<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/index.css" %}">
+</head>
+<body>
+	<!-- 导航条 -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navagtion">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+			<div class="collapse navbar-collapse" id="collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a>
+					<li><a href="/people">People</a>
+					<li><a href="/docs">Docs</a>
+					<li><a href="/gallery">Gallery</a>
+					<li><a href="/links">Links</a>
+					<li><a href="/access">Access</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+
+	<!-- 网页内容 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+			 <h2>Home</h2>
+			</div>
+		</div>
+	</div>
+	<!-- 网页内容 -->
+		
+	<!-- 页面底部版权声明 -->
+	<div class="container">
+		<footer class="footer">
+			<p>&copy; 2017 1210 Lab</p>
+		</footer>
+	</div>
+	<!-- 页面底部版权声明 -->
+
+	<!-- Js 文件 -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<!-- Js 文件 -->
+	<!-- Js 文件 -->
+</body>
+</html>
