@@ -15,8 +15,8 @@ def gallery(request, page=None):
 		return render(request, 'gallery_'+str(page)+'.html')
 	return render(request, 'gallery.html')
 
-def links(request):
-	return render(request, 'links.html')
+def publications(request):
+	return render(request, 'publications.html')
 
 def access(request):
 	return render(request, 'access.html')
