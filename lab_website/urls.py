@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^people/$', views.people),
     url(r'^docs/$', views.docs),
     url(r'^gallery/$', views.gallery),
+    url(r'^gallery/(?P<page>\d{1,3})$', views.gallery),
     url(r'^links/$', views.links),
     url(r'^access/$', views.access),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

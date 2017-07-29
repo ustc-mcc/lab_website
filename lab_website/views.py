@@ -10,7 +10,9 @@ def people(request):
 def docs(request):
 	return render(request, 'docs.html')
 
-def gallery(request):
+def gallery(request, page=None):
+	if page:
+		return render(request, 'gallery_'+str(page)+'.html')
 	return render(request, 'gallery.html')
 
 def links(request):
